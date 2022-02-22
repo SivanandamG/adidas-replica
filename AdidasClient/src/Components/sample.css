@@ -1,0 +1,10 @@
+#sample{
+     display: grid;
+     grid-template-columns: 25% 25% 25% 25%;     
+}
+#sample>div{
+    margin-left: 5%;
+}
+#sample img{
+       width: 100%;  
+}
