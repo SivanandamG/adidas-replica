@@ -3,18 +3,24 @@ import { Link } from "react-router-dom";
 import { GrSearch } from "react-icons/gr";
 import { FiUser } from "react-icons/fi";
 import { CgHeart } from "react-icons/cg";
-import { BsHandbag } from "react-icons/bs";
+import { BsHandbag, BsCardHeading,BsTruck} from "react-icons/bs";
+import { ImLoop } from "react-icons/im";
 
 export const Navbar = () => {
   return (
     <div id="nav_mainwrap">
       <div id="nav_upper_wrap">
         <div className="nav_upper_content">
-          FREE DELIVERY FOR ALL ORDERS NOW
+          <i className="nav_upper_content_logo">{<BsTruck />}</i>
+          <span>FREE DELIVERY FOR ALL ORDERS NOW</span>
         </div>
-        <div className="nav_upper_content">SIGN UP & GET 15% OFF</div>
         <div className="nav_upper_content">
-          QUICK EASY RETURNS ON PREPAID ORDERS
+          <i className="nav_upper_content_logo">{<BsCardHeading />}</i>
+          <span>SIGN UP & GET 15% OFF</span>
+        </div>
+        <div className="nav_upper_content">
+          <i className="nav_upper_content_logo">{<ImLoop />}</i>
+          <span>QUICK EASY RETURNS ON PREPAID ORDERS</span>
         </div>
       </div>
       <div id="nav_lower_wrap">
@@ -76,9 +82,9 @@ export const Navbar = () => {
                 <i>{<GrSearch />}</i>
               </div>
               <div id="nav_lower_sec_icons">
-              <i>{<FiUser/>}</i>
-              <i>{<CgHeart/>}</i>
-              <i>{<BsHandbag/>}</i>
+                <i>{<FiUser />}</i>
+                <i>{<CgHeart />}</i>
+                <i>{<BsHandbag />}</i>
               </div>
             </div>
           </div>

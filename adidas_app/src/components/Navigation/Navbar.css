@@ -8,12 +8,22 @@
   display: flex;
   color: #fff;
   justify-content: space-around;
-  font-size: 10px;
-  font-weight: bolder;
+  font-size: 11px;
+  font-weight: 600;
 }
 
 .nav_upper_content {
-  padding: 8px;
+  display: flex;
+}
+
+.nav_upper_content>span{
+  padding-top: 10px;
+}
+
+.nav_upper_content_logo{
+  font-size: 16px;
+  margin-top: 7px;
+  margin-right: 7px;
 }
 
 #nav_lower_wrap {
@@ -45,7 +55,6 @@
 }
 
 #nav_lower_secondary_categories {
-  /* border: 1px solid red; */
   margin-left: 200px;
   margin-top: 20px;
 }
