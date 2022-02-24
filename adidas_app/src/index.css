@@ -2,9 +2,6 @@ body {
   margin: 0;
   font-family:Arial, Helvetica, sans-serif;
   letter-spacing: 2px;
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

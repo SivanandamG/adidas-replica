@@ -2,11 +2,11 @@
   height: auto;
 }
 
-#body_video_wrap_one {
+.body_video_wrap {
   width: 600px;
 }
 
-#body_video_wrap_one > video {
+.body_video_wrap > video {
   max-width: 1350px;
 }
 
@@ -20,7 +20,6 @@
 }
 
 #body_wrap_two_btns {
-  /* border: 1px solid red; */
   width: auto;
   margin-left: 210px;
 }
@@ -34,11 +33,11 @@
   font-family: AdihausDIN;
 }
 
-#body_wrap_two_btns > button:hover{
+#body_wrap_two_btns > button:hover {
   border-color: black;
 }
 
-#body_wrap_three{
+#body_wrap_three {
   margin-top: 60px;
   margin-left: 40px;
   font-family: AdihausDIN;
@@ -49,18 +48,17 @@
   width: 1270px;
 }
 
-#body_wrap_three_imagediv{
+#body_wrap_three_imagediv {
   display: flex;
   margin-top: 10px;
   position: relative;
 }
 
-#body_wrap_three_imagediv>img{
+#body_wrap_three_imagediv > img {
   margin-right: 17px;
-  
 }
 
-#wrap_three_img_txt1{
+#wrap_three_img_txt1 {
   position: absolute;
   top: 140px;
   left: 180px;
@@ -69,7 +67,7 @@
   color: white;
 }
 
-#wrap_three_img_txt2{
+#wrap_three_img_txt2 {
   position: absolute;
   left: 600px;
   top: 150px;
@@ -78,12 +76,66 @@
   color: white;
 }
 
-#wrap_three_img_txt3{
+#wrap_three_img_txt3 {
   position: absolute;
-   left: 1041px;
+  left: 1041px;
   top: 150px;
   font-size: 17px;
   font-style: normal;
   color: white;
 }
 
+#body_wrap_five {
+  margin-top: 30px;
+}
+
+#body_wrap_five_txt {
+  margin-left: 53px;
+  font-family: AdihausDIN;
+  font-style: italic;
+  letter-spacing: -1px;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+#body_wrap_six {
+  padding: 80px 0 80px;
+  background: #e9ecef;
+  display: flex;
+  padding-left: 120px;
+  padding-right: 80px;
+  margin-top: 15px;
+  font-family: AdihausDIN;
+}
+
+#body_wrap_six_contain1 > :nth-child(1) {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#body_wrap_six_contain2 > :nth-child(1) {
+  font-size: 14px;
+  font-weight: 700; 
+}
+
+#body_wrap_six_contain1 > :nth-child(2) {
+  font-size: 14px;
+  margin-top: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+}
+
+#body_wrap_six_contain2 > :nth-child(2) {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 20px;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+
+#body_wrap_six_contain2 {
+  margin-left: 30px;
+}
