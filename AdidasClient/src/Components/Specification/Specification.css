@@ -1,0 +1,47 @@
+.nac_spec_box{
+    display: flex;
+}
+
+.nac_spec_left{
+    /* border: 1px solid green; */
+    flex: 1;
+    height: 500px;
+}
+
+.nac_spec_right{
+    /* border: 1px solid green; */
+    flex: 1;
+    height: 500px;
+}
+
+.nac_leftlist{
+    text-align: left;
+    max-width: 50%;
+}
+
+li{
+    margin-top: 18px;
+}
+
+.nac_rightlist{
+    text-align: left;
+    max-width: 50%;
+}
+
+table{
+    width: 100%;
+    
+}
+
+td{
+    width: 50%;
+    border: 1px solid black;
+    padding-top: 10px;
+    height: 50px;
+}
+
+.nac_thead{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}

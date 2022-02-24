@@ -1,0 +1,121 @@
+.nac_prbox{
+    margin-left: 10px;
+}
+
+.nac_right_top{
+    /* border: 1px solid rebeccapurple; */
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.nac_topstar {
+    margin-left: 170px;
+}
+
+.nac_strike{
+    text-decoration: line-through;
+    font-size: 20px;
+    
+}
+
+.nac_red{
+    color: red;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.nac_rightprice{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    
+}
+
+.nac_tax{
+    display: flex;
+    flex-direction: row;
+}
+
+.nac_right_title{
+    /* border: 1px solid orange; */
+    height: 170px;
+    margin-top: 20px;
+}
+
+.nac_right_title > h1{
+    font-style: italic;
+    text-align: left;
+}
+.nac_addbag{
+    height: 60px;
+    width: 350px;
+    background-color: black;
+    color: white;
+}
+.nac_fav{
+    height: 60px;
+    width: 70px;
+    margin-left: 10px;
+}
+.nac_right_size{
+    /* border: 1px solid rebeccapurple; */
+    height: 130px;
+    margin-top: 20px;
+}
+.nac_sizebtn > h4{
+    text-align: left;
+}
+.nac_sizebtn > button{
+    width: 82px;
+    height: 50px;
+    
+}
+
+.nac_sizebtn > button ::after{
+    cursor: pointer;
+    background-color: black;
+}
+
+.nac__tax{
+    text-align: left;
+    color: black; 
+}
+.nac_tax{
+    text-align: left;
+    color: black; 
+    padding-top: 10px;
+}
+
+.nac_right_btn{
+    /* border: 1px solid orange; */
+    height: 70px;
+    margin-top: 20px;
+}
+
+.nac_right_bottom{
+    /* border: 1px solid black; */
+    height: 50px;
+    margin-top: 20px;
+}
+
+.nac_ship{
+    text-align: left;
+    display: flex;
+    padding-top: 20px;
+}
+.nac_ship > a{
+    color: black;
+}
+.nac_money{
+    text-align: left;
+    display: flex;
+    padding-top: 20px;
+}
+.nac_money > a{
+    color: black;
+}
+.nac__s{
+    color: black;
+}
