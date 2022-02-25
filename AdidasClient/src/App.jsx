@@ -7,11 +7,14 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path='/' element={<ProductDetails/>}></Route>
-        <Route path='/wishlist' element={<ProductWishlist/>}></Route>
+        <Route
+          path="/products/:id"
+          element={<ProductDetails />}
+        ></Route>
+        <Route path="/wishlist" element={<ProductWishlist />}></Route>
       </Routes>
     </div>
-  )
+  );
 }
 
 export default App
