@@ -32,10 +32,9 @@
 a:hover{
     color: white;
     background-color: black;
+    width: 400px;
 }
 
 .nac_wishhead{
-    font-weight: 1200;
+    font-weight: 1500;
 }
-
-

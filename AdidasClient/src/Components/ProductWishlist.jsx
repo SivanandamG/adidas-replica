@@ -7,6 +7,10 @@ export const ProductWishlist = () => {
                 <h1 className="nac_wishhead">MY WISHLIST</h1>
                 <p>0 ITEMS</p>
                 <p>You haven't saved any items to your wishlist yet. Start shopping and add your favorite items to your wishlist.</p>
+                {/* <div>
+                    <img src="" alt="" />
+                    <p></p>
+                </div> */}
             </div>
             <div className="nac_wish_right">
                 <h2 className="nac_wishhead">NEED HELP?</h2>
