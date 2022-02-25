@@ -48,5 +48,6 @@
 }
 
 .slick-dots>li>button:before{
+    margin-top: 60px;
   font-size: 15px;
 }
