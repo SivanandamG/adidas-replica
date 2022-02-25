@@ -24,6 +24,33 @@ export default function Cart (){
                })}
                <button className="checkout">Checkout →</button>
                </div>
+               
+               <div id="cartSide">
+               <button className="checkout">Checkout →</button>
+               <div>
+                    <h2><b>OrderSummary</b></h2><br />
+                    <table>
+                         <tbody>
+                              <tr><td>ORIGINAL PRICE </td><td>₹{sum}.00</td></tr>
+                              <tr><td>ONSALE PRICE </td><td>{Math.round(sum*.6)-sum}.00</td></tr>
+                              <tr><td>{cart.length} ITEMS </td><td>₹{Math.round(sum*.4)}.00</td></tr>
+                              <tr><td>DELIVERY </td><td>FREE</td></tr>
+                              <tr><td><b> TOTAL PRICE </b></td><td><b>₹{Math.round(sum*.4)}.00</b></td></tr>
+                         </tbody>
+                    </table>
+                              <p>(Including all taxes)</p>
+               </div>
+                    <input type="text" placeholder="Enter Promo Code  " />
+                    <p><a href=""> NEED HELP? </a></p>
+
+                    <p><a href=""> Delivery</a></p> 
+
+                    <p><a href=""> Return & Refund </a></p>
+
+                    <p><a href=""> Ordering & Payment </a></p>
+
+                    <p><a href=""> Promotions & Vouchers </a></p>
+               </div>
           </div>
      )
 }
