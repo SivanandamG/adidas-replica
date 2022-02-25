@@ -4,10 +4,17 @@ import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import OpenInFullIcon from '@mui/icons-material/OpenInFull';
+import axios from "axios";
+import {useParams} from 'react-router-dom'
 
 export const Images = () => {
+
     const Thumbnail = ({ arr, image, index }) => {
-        return (<div className="tumbnail">
+
+ const { id } = useParams();
+ console.log({id});
+
+        return(<div className="tumbnail">
           {
             arr.map((imgsrc, i) => (
               <img
@@ -44,6 +51,15 @@ export const Images = () => {
           }
         }
       
+      const [res, setRes] = useState();
+      useEffect(async () => {
+        let data = await axios.get(
+          "http://localhost:2345/products/621716d177215202e3c4acc6"
+        );
+        data = data.data;
+        setRes(data);
+      }, []);
+      console.log(res);
       
         return (
           <div className="slideshow">
