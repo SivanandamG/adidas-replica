@@ -86,7 +86,7 @@
 }
 
 #body_wrap_five {
-  margin-top: 30px;
+  margin-top: 70px;
 }
 
 #body_wrap_five_txt {
@@ -138,4 +138,14 @@
 
 #body_wrap_six_contain2 {
   margin-left: 30px;
+}
+
+#body_wrap_four_txt {
+  margin-left: 53px;
+  font-family: AdihausDIN;
+  font-style: italic;
+  letter-spacing: -1px;
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: 50px;
 }

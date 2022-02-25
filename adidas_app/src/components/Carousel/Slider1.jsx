@@ -1,5 +1,5 @@
 import Slider from "react-slick";
-import "./Slider.css"
+import "./Slider1.css"
 
 function NextArrow(props) {
   const { className, onClick } = props;
@@ -21,7 +21,7 @@ function PrevArrow(props) {
   );
 }
 
-export default function Carousel() {
+export default function Carousel_one() {
   var settings = {
     infinite: true,
     speed: 500,

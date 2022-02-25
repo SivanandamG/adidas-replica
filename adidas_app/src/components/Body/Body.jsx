@@ -1,5 +1,6 @@
 import "./Body.css"
-import Carousel from "../Carousel/Slider.jsx";
+import Carousel_one from "../Carousel/Slider1.jsx";
+import Carousel_two from "../Carousel/Slider2.jsx";
 
 export const Body=()=>{
     return (
@@ -41,9 +42,13 @@ export const Body=()=>{
             src="https://brand.assets.adidas.com/video/upload/q_auto,vc_auto/video/upload/training-ss22-bra_rev-launch-hp-masthead-d_pdjqdh.mp4"
           ></video>
         </div>
+        <div id="body_wrap_four">
+          <div id="body_wrap_four_txt">BEST OF ADIDAS</div>
+          <Carousel_two />
+        </div>
         <div id="body_wrap_five">
           <div id="body_wrap_five_txt">WHAT'S HOT</div>
-          <Carousel />
+          <Carousel_one />
         </div>
         <div id="body_wrap_six">
           <div id="body_wrap_six_contain1">
