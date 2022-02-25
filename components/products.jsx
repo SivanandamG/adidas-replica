@@ -1,19 +1,24 @@
+import { useEffect,useState } from "react";
 import { Showproduct } from "./Showproduct";
 
+
 export const Products = () => {
-  const data = {
-    prod: [
-      { id: 1, prod_name: "xyz", prod_price: 3600 },
-      { id: 1, prod_name: "xyz", prod_price: 3600 },
-      { id: 1, prod_name: "xyz", prod_price: 3600 },
-      { id: 1, prod_name: "xyz", prod_price: 3600 },
-      { id: 1, prod_name: "xyz", prod_price: 3600 },
-      { id: 1, prod_name: "xyz", prod_price: 3600 },
-      { id: 1, prod_name: "xyz", prod_price: 3600 },
-      { id: 1, prod_name: "xyz", prod_price: 3600 },
-      { id: 1, prod_name: "xyz", prod_price: 3600 },
-    ],
-  };
+
+
+  const [data, setData] = useState([]);
+  
+
+
+  
+  useEffect(() => {
+    fetch("http://localhost:2345/products")
+      .then((res) => res.json())
+      .then((res) => {
+        console.log(res);
+        setData(res);
+      });
+  }, []); 
+
   return (
     <div className="main_page">
       <h1 className="heading">MEN SNEAKERS</h1>
@@ -32,34 +37,43 @@ export const Products = () => {
         <a href="#">Cricket</a>
 
         <div id="filter_sort">
-          <button id="filter_button">
+          {/* <button id="filter_button" onClick={}>
             <span>Filter & Sort</span>
             <img
               id="filter_img"
               src="	https://www.adidas.co.in/glass/react/dd402dc/assets/img/icon-test-filters.svg"
             />
-          </button>
+          </button> */}
+          <select>
+            <option>Sort by</option>
+            <option value="LOW TO HIGH">LOW TO HIGH</option>
+            <option value="HIGH TO LOW">HIGH TO LOW</option>
+          </select>
         </div>
       </div>
+      
 
       {/* //product_div */}
       <div className="product_div">
-        {
-          data.prod.map((e) => {
-            return (
-              <div id="prod_show">
-                {/* <h1>{e.prod_name}</h1>
-                <h2>{e.prod_price}</h2>
-                <p>{e.prod_price}</p> */}
-                <Showproduct key={e.id} id={e.id} name={e.prod_name} price={e.prod_price}/>
-              </div>
-            );
-          })
-          }
+        {data.map((e) => {
+          return (
+            <div id="prod_show" key={e._id}>
+             
+              <Showproduct
+                id={e._id}
+                image={e.imageUrls}
+                name={e.title}
+                price={e.price}
+                category={e.category}
+                discount={e.discount}
+              />
+            </div>
+          );
+        })}
       </div>
 
       {/* //thoery content */}
-
+      <br/>
       <div id="thoery_content">
         <h1>YOUR PERFECT MENS SNEAKERS</h1>
         <p>

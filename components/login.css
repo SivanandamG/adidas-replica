@@ -1,0 +1,63 @@
+*{
+    text-align: left;
+}
+.nkContainer{
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    /* width: 60%; */
+    justify-content: space-evenly;
+}
+#heading{
+    font-size: 40px;
+    font-weight: bold;
+}
+form>a{
+    color: black;
+}
+#image_div>img{
+    width: 100%;
+}
+#button_div{
+    border:1px solid black;
+    
+    
+}
+#button_div>Button{
+    background-color: black;
+    transform :translate(-3px,-3px);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    font-weight: bold;
+    
+}
+#button_div>Button:hover{
+    color: gray;
+}
+
+/* left Div Work */
+
+#outlined-required{
+    width: 450px;
+}
+
+#tc{
+    font-size: 16px;
+}
+#tc>span{
+    text-decoration: underline;
+}
+#fb{
+    border: 1px solid black;
+    padding: 15px;
+    font-weight: bold;
+    width: 35%;
+   
+    cursor: pointer;
+}
+
+#logo{
+    color: blue;
+    margin-left: 60px;
+}
