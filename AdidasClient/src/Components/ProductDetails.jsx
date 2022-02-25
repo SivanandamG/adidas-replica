@@ -1,10 +1,10 @@
-import { Description } from "./Description/Description"
-import "./Details.css"
-import { Images } from "./Image/Image"
-import { Price } from "./Price/Price"
-import { Specification } from "./Specification/Specification"
+import { Description } from "./ProductDescription/Description"
+import "./ProductDetails.css"
+import { Images } from "./ProductImage/Image"
+import { Price } from "./ProductPrice/Price"
+import { Specification } from "./ProductSpecification/Specification"
 
-export const Details = () => {
+export const ProductDetails = () => {
     return (
         <div className="nac__container">
             <div className="nac_left_container">
