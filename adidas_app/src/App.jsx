@@ -4,6 +4,7 @@ import { Navbar } from "./components/Navigation/Navbar.jsx";
 import { Footer } from "./components/Footer/Footer.jsx";
 import { Body } from "./components/Body/Body.jsx";
 import {Routes, Route } from "react-router-dom";
+import {Signup} from "./components/Signup/Signup.jsx"
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <Navbar/>
     <Body/>
     <Footer/>
+    <Signup/>
     </div>
   );
 }

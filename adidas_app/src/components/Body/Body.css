@@ -51,7 +51,6 @@
 #body_wrap_three_imagediv {
   display: flex;
   margin-top: 10px;
-  position: relative;
 }
 
 #body_wrap_three_imagediv > img {
@@ -59,7 +58,6 @@
 }
 
 #wrap_three_img_txt1 {
-  position: absolute;
   top: 140px;
   left: 180px;
   font-size: 17px;
@@ -68,7 +66,6 @@
 }
 
 #wrap_three_img_txt2 {
-  position: absolute;
   left: 600px;
   top: 150px;
   font-size: 17px;
@@ -77,7 +74,6 @@
 }
 
 #wrap_three_img_txt3 {
-  position: absolute;
   left: 1041px;
   top: 150px;
   font-size: 17px;
@@ -149,3 +145,6 @@
   font-weight: 800;
   margin-top: 50px;
 }
+
+
+
