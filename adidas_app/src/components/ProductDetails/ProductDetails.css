@@ -1,0 +1,90 @@
+*{
+    font-family: AdihausDIN, Helvetica, Arial, sans-serif;;
+  }
+
+.nac__container{
+    margin: auto;
+    display: flex;
+}
+
+.nac_left_container{
+    flex: 2;
+    /* border: 1px solid red; */
+    height: fit-content;
+}
+
+.nac_right_container{
+    flex: 1;
+    /* border: 1px solid green; */
+    height: 650px;
+   
+}
+
+.nac_image{
+    width: 100%;
+    height: 650px;
+    background-color: #eceff1;
+}
+
+.nac_description{
+    display: flex;
+}
+
+
+
+.nac_care_box{
+    display: flex;
+}
+
+.nac_care_head{
+    margin-left: 50px;
+}
+
+.nac_care_wash{
+    flex: 2;
+    height: 350px;
+    /* border: 1px solid navy; */
+    
+}
+
+.nac_care_inst{
+    flex: 1;
+    height: 350px;
+    /* border: 1px solid navy; */
+    
+}
+
+
+
+/* .nac_right_container{
+    display: flex;
+} */
+
+
+.nac_floatleft{
+    float: left;
+}
+
+.nac_floatright{
+    float: right;
+}
+
+/* .nac_spec_table {
+    border: 1px solid black;
+} */
+
+/* .nac_spec_table > th{
+    border: 1px solid black;
+} */
+
+/* .nac_spec_table > tr,td {
+    border: 1px solid black;
+} */
+
+.nac_spec_table {
+    display: grid;
+}
+
+.nac_spec_table > td {
+    grid-area: 50%;
+}

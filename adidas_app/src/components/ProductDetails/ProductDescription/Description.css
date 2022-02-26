@@ -1,0 +1,36 @@
+.nac_desbox{
+    display: flex;
+    
+}
+
+.nac_desbox > h1{
+    text-align: center;
+}
+
+.nac_desc_det{
+    /* border: 1px solid teal; */
+    flex: 1;
+    height: 450px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.nac_desc_det > h2{
+    padding-top: 90px;
+}
+.nac_desc_det > p {
+   text-align: justify;
+   margin-left: 20px;
+}
+.nac_desc_img{
+    /* border: 1px solid black; */
+    flex: 1;
+    height: 450px;
+    margin: auto;
+}
+
+.nac_desc_img > img{
+
+    width: 350px;
+    height: 400px;
+}
