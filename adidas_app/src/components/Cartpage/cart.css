@@ -1,0 +1,129 @@
+#cart{
+font-size: 16px;}
+#cart>div:nth-child(1){
+    width: 50%;
+    margin-left: 17%;
+}
+
+#cart{
+    display: flex;
+}
+
+#subcart>div{
+    border: .5px solid rgb(97, 97, 97);
+    height: 260px;
+    margin-top: 50px;
+}
+
+
+
+#subcart>div .itemTitle{
+    margin-left: 43%;
+    margin-top: -225px;
+}
+#subcart>div .itemPrice{
+    width: 60%;
+    margin-left:80%;
+    margin-top: -70px;
+}
+#subcart>div .itemSize{
+    margin-left:43%;
+    margin-top: 5%;
+    font-size: 18px;
+}
+#subcart>div select{
+    width: 15%;
+    height: 40px;
+    margin-left:43%;
+    margin-top: 5%;
+    font-size: 18px;
+}
+#cart img{
+       width: 40%;  
+       height: 259px;
+       margin-top: -20px;
+}
+#subcart>div .cartclose{
+    margin-left: 97.7%;
+}
+#subcart>div .cartclose:hover{
+   cursor: pointer;
+}
+#subcart .checkout{
+    margin-top: 10px;
+    width: 220px;
+    height: 50px;
+    outline: none;
+    background-color: black;
+    color: aliceblue;
+    font-size: 22px;
+ }
+
+ #cartSide{
+     text-align: left;
+     width: 25%;
+     height:399px;
+     margin-top: 128px;
+     margin-left: 1%;
+ }
+
+ #cartSide>div{
+    border: .5px solid rgb(144, 144, 144);
+    margin-top: 30px;
+ }
+
+
+ .checkout{
+    margin-top: -40px;
+    margin-left: 20%;
+    width: 220px;
+    height: 50px;
+    outline: none;
+    background-color: black;
+    color: aliceblue;
+    font-size: 22px;
+ }
+
+ #cartSide h2{
+    text-align: center;
+}
+
+ #cartSide table{
+     width: 90%;
+     margin-left: 7%;
+}
+
+#cartSide table tr{
+    width: 50%;
+}
+
+#cartSide table tr td:nth-child(1){
+    text-align: left;
+}
+
+#cartSide table tr td:nth-child(2){
+    text-align: right;
+}
+
+#cartSide> input{
+    width: 98%;
+    height: 40px;
+    font-size: 23px;
+    margin-top: 3%;
+}
+
+#cartSide table+p{
+    margin-left: 8%;
+}
+
+
+#cartSide p>a{
+    text-decoration: none;
+    color: black;
+}
+
+#cartSide p>a:hover{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
