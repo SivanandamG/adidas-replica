@@ -1,0 +1,150 @@
+#body_wrap {
+  height: auto;
+}
+
+.body_video_wrap {
+  width: 600px;
+}
+
+.body_video_wrap > video {
+  max-width: 1350px;
+}
+
+#body_wrap_two > h2 {
+  text-align: center;
+  font-style: italic;
+  letter-spacing: -1px;
+  font-size: 30px;
+  font-family: AdihausDIN;
+  margin-top: 70px;
+}
+
+#body_wrap_two_btns {
+  width: auto;
+  margin-left: 210px;
+}
+
+#body_wrap_two_btns > button {
+  padding: 10px;
+  margin-right: 10px;
+  background-color: white;
+  border: 1px solid #d3d7da;
+  font-size: 16px;
+  font-family: AdihausDIN;
+}
+
+#body_wrap_two_btns > button:hover {
+  border-color: black;
+}
+
+#body_wrap_three {
+  margin-top: 60px;
+  margin-left: 40px;
+  font-family: AdihausDIN;
+  font-style: italic;
+  letter-spacing: -1px;
+  font-size: 30px;
+  font-weight: 800;
+  width: 1270px;
+}
+
+#body_wrap_three_imagediv {
+  display: flex;
+  margin-top: 10px;
+}
+
+#body_wrap_three_imagediv > img {
+  margin-right: 17px;
+}
+
+#wrap_three_img_txt1 {
+  top: 140px;
+  left: 180px;
+  font-size: 17px;
+  font-style: normal;
+  color: white;
+}
+
+#wrap_three_img_txt2 {
+  left: 600px;
+  top: 150px;
+  font-size: 17px;
+  font-style: normal;
+  color: white;
+}
+
+#wrap_three_img_txt3 {
+  left: 1041px;
+  top: 150px;
+  font-size: 17px;
+  font-style: normal;
+  color: white;
+}
+
+#body_wrap_five {
+  margin-top: 120px;
+}
+
+#body_wrap_five_txt {
+  margin-left: 53px;
+  font-family: AdihausDIN;
+  font-style: italic;
+  letter-spacing: -1px;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+#body_wrap_six {
+  padding: 80px 0 80px;
+  background: #e9ecef;
+  display: flex;
+  padding-left: 120px;
+  padding-right: 80px;
+  margin-top: 15px;
+  font-family: AdihausDIN;
+}
+
+#body_wrap_six_contain1 > :nth-child(1) {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#body_wrap_six_contain2 > :nth-child(1) {
+  font-size: 14px;
+  font-weight: 700; 
+}
+
+#body_wrap_six_contain1 > :nth-child(2) {
+  font-size: 14px;
+  margin-top: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+}
+
+#body_wrap_six_contain2 > :nth-child(2) {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 20px;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+
+#body_wrap_six_contain2 {
+  margin-left: 30px;
+}
+
+#body_wrap_four_txt {
+  margin-left: 53px;
+  font-family: AdihausDIN;
+  font-style: italic;
+  letter-spacing: -1px;
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: 50px;
+}
+
+
+
