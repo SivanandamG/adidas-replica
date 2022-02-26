@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react"
 import "./cart.css"
+import { Navbar } from "../Navigation/Navbar.jsx";
+import { Footer } from "../Footer/Footer.jsx";
+
 export default function Cart (){
      const [cart,setCart] = useState([]);
      useEffect(()=>{
@@ -7,6 +10,8 @@ export default function Cart (){
      },[]);
      var sum=0; cart.map((a)=>{sum = sum + a.price; return})
      return(
+          <>
+          <Navbar/>
           <div id="cart">
                <div id="subcart">
                <h1>Your Bag</h1>
@@ -14,7 +19,13 @@ export default function Cart (){
                <p>Items in your bag are not reserved – check out now to make them yours.</p>
                {cart.map((a)=>{
                     return(<div key={a._id}>
-                    <div className="cartclose" onClick={()=>{fetch(`http://localhost:2345/cart/deleteitem/62173d4ee7006e0f0f397d33/${a._id}`).then((res)=>res.json()).then((res)=>{setCart(res)})}}><b><strong>X</strong></b></div>
+                    <div className="cartclose" onClick={()=>{fetch(
+                      `https://adidas-server.herokuapp.com/cart/deleteitem/62173d4ee7006e0f0f397d33/${a._id}`
+                    )
+                      .then((res) => res.json())
+                      .then((res) => {
+                        setCart(res);
+                      });}}><b><strong>X</strong></b></div>
                               <img src={a.imageUrls[0]} alt="" />
                               <div className="itemTitle"> {a.title}DOVE GREY / CORE BLACK / SEMI SCREAMING GREEN</div>
                               <div className="itemPrice"> <strike style={{color:"grey"}}>₹{a.price}.00</strike> <span style={{color:"red"}}> ₹{Math.round(a.price*a.discount)}.00</span></div><br />
@@ -44,13 +55,15 @@ export default function Cart (){
                     <p><a href=""> NEED HELP? </a></p>
 
                     <p><a href=""> Delivery</a></p> 
-
+{/* 
                     <p><a href=""> Return & Refund </a></p>
 
                     <p><a href=""> Ordering & Payment </a></p>
 
-                    <p><a href=""> Promotions & Vouchers </a></p>
+                    <p><a href=""> Promotions & Vouchers </a></p> */}
                </div>
           </div>
+          <Footer/>
+          </>
      )
 }

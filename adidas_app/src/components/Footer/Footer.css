@@ -37,8 +37,8 @@
 
 #footer_secttwo_wrap {
   height: 270px;
-  margin-top: 25px;
-  margin-bottom: 45px;
+  margin-top: 5px;
+  margin-bottom: 80px;
 }
 
 #footer_secttwo_links_wrap {
@@ -55,7 +55,7 @@
 .footer_secttwo_wrap_links > li {
   list-style: none;
   font-size: 12px;
-  margin-bottom: 10px;
+  margin-bottom: -10px;
 }
 
 .footer_secttwo_wrap_links > li:hover {
@@ -65,13 +65,14 @@
 .footer_secttwo_mainlinks {
   text-decoration: none;
   color: black;
-  opacity: 0.75;
+  /* opacity: 0.8; */
+  letter-spacing: 0;
 }
 
 .footer_secttwo_wrap_links > :nth-child(1) {
   font-size: 18px;
   letter-spacing: 0;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 15px;
 }
 

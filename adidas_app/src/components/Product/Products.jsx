@@ -18,9 +18,6 @@ export const Products = () => {
       
     }
   
-
-
-  
   useEffect(() => {
     fetch("https://adidas-server.herokuapp.com/products")
       .then((res) => res.json())
