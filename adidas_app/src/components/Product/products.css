@@ -1,0 +1,147 @@
+.main_page{
+    /* border: 1px solid red; */
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+.heading{
+    text-align: left;
+    font-style: italic;
+    
+}
+.type_options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.type_options a{
+    text-decoration: none;
+    color: lightgray;
+}
+
+#filter_sort{
+    margin: 10px;
+    font-size: 16px;
+    
+}
+#filter_button{
+    display: flex;
+    justify-content: space-evenly;
+    width: 150px;
+    padding: 8px;
+    /* height: 40px; */
+    font-size: 16px;
+    background-color: white;
+}
+#filter_button:hover{
+    background-color: black;
+    color: white;
+}
+
+#filter_button span:hover{
+    color: white;
+}
+#filter_img{
+    margin-left: 10px;
+}
+
+.product_div{
+    /* border: 1px solid blue; */
+    display: grid;
+    /* height: 900px; */
+    /* grid-gap:10px; */
+    grid-template-columns: repeat(3,33.33%);
+}
+
+#prod_show{
+    height: 450px;
+    width: 300px;
+    border: 1px solid lightgray;
+    margin-left: 50px;
+    margin-top: 15px;
+    box-shadow: 10px 5px 5px gainsboro;
+
+}
+
+
+#thoery_content{
+    text-align: left;
+}
+#category>h2{
+    text-align: left;
+}
+#category_options{
+    display: grid;
+    grid-template-columns: repeat(6,200px);
+    text-align: left;
+
+    
+}
+#list{
+    list-style-type: none;
+    line-height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#display_img{
+    width: 300px;
+    height: 350px;
+}
+
+#design{
+    text-decoration: none;
+    color: black;   
+    text-align: left;
+}
+
+#prod_price{
+    position: relative;
+    top:-90px;
+    background-color: white;
+    width: 40%;
+
+}
+#prod_price>span:first-child{
+    text-decoration: line-through;
+}
+#finalprice{
+    color: red;
+}
+#prod_name{
+    height: 35px;
+    /* border: 1px solid red; */
+    margin-bottom: 0px;
+}
+
+#prod_cat{
+    position: relative;
+    top: -25px;
+    /* border: 1px solid blue; */
+}
+#prod_color{
+    position: relative;
+    top: -25px;
+    /* border: 1px solid blue; */
+}
+ #prod_all_img{
+    display: flex;
+
+}
+#prod_all_img > img{
+width: 20%;
+height: 20%;
+}
+
+#fav{
+    width: 15px;
+    position: relative;
+    /* bottom:80%; */
+    left:92%;
+}
+select{
+    background-color: black;
+    color: white;
+}
