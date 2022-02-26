@@ -1,13 +1,12 @@
 .main_page{
     /* border: 1px solid red; */
-    width: 80%;
+    width: 100%;
     height: auto;
     margin: auto;
 }
 .heading{
     text-align: left;
     font-style: italic;
-    
 }
 .type_options{
     display: flex;
@@ -101,8 +100,7 @@
     position: relative;
     top:-90px;
     background-color: white;
-    width: 40%;
-
+    width: 50%;
 }
 #prod_price>span:first-child{
     text-decoration: line-through;

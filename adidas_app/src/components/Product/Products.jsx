@@ -1,6 +1,8 @@
 import { useEffect,useState } from "react";
 import { Showproduct } from "../Product/Showproduct";
-
+import { Navbar } from "../Navigation/Navbar.jsx";
+import { Footer } from "../Footer/Footer.jsx";
+import "./products.css"
 
 export const Products = () => {
 
@@ -30,6 +32,7 @@ export const Products = () => {
 
   return (
     <div className="main_page">
+      <Navbar />
       <h1 className="heading">MEN SNEAKERS</h1>
       <div className="type_options">
         <a href="#">All men's footwear</a>
@@ -55,19 +58,21 @@ export const Products = () => {
           </button> */}
           <select>
             <option>Sort by</option>
-            <option value="LOW TO HIGH" onClick={sortAsc()}>LOW TO HIGH</option>
-            <option value="HIGH TO LOW" onClick={sortDec}>HIGH TO LOW</option>
+            <option value="LOW TO HIGH" onClick={sortAsc()}>
+              LOW TO HIGH
+            </option>
+            <option value="HIGH TO LOW" onClick={sortDec}>
+              HIGH TO LOW
+            </option>
           </select>
         </div>
       </div>
-      
 
       {/* //product_div */}
       <div className="product_div">
         {data.map((e) => {
           return (
             <div id="prod_show" key={e._id}>
-             
               <Showproduct
                 id={e._id}
                 image={e.imageUrls}
@@ -82,7 +87,7 @@ export const Products = () => {
       </div>
 
       {/* //thoery content */}
-      <br/>
+      <br />
       <div id="thoery_content">
         <h1>YOUR PERFECT MENS SNEAKERS</h1>
         <p>
@@ -199,6 +204,7 @@ export const Products = () => {
           <li id="list">Caps</li>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -3,7 +3,7 @@ import "./cart.css"
 export default function Cart (){
      const [cart,setCart] = useState([]);
      useEffect(()=>{
-          fetch("http://localhost:2345/cart/62173d4ee7006e0f0f397d33").then((res)=>res.json()).then((res)=>{console.log(res);setCart(res)})
+          fetch("https://adidas-server.herokuapp.com/cart/62173d4ee7006e0f0f397d33").then((res)=>res.json()).then((res)=>{console.log(res);setCart(res)})
      },[]);
      var sum=0; cart.map((a)=>{sum = sum + a.price; return})
      return(

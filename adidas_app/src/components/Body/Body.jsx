@@ -1,10 +1,13 @@
 import "./Body.css"
 import Carousel_one from "../Carousel/Slider1.jsx";
 import Carousel_two from "../Carousel/Slider2.jsx";
+import { Navbar } from "../Navigation/Navbar.jsx";
+import { Footer } from "../Footer/Footer.jsx";
 
 export const Body=()=>{
     return (
       <>
+      <Navbar/>
         <div id="body_wrap">
           <div className="body_video_wrap">
             <video
@@ -104,6 +107,7 @@ export const Body=()=>{
             </div>
           </div>
         </div>
+        <Footer/>
       </>
     );
 }
