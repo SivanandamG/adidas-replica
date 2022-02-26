@@ -1,0 +1,40 @@
+.nac_wish_left{
+    float: left;
+    width: 70%;
+    text-align: left;
+}
+
+.nac_wish_right{
+    float: right;
+    width: 30%;
+    text-align: left;
+}
+
+.nac_wish_right > h2{
+    text-align: left;
+    margin-left: 37px;
+}
+
+.nac_wright_a{
+    list-style-type: none;
+    text-align: left;
+}
+
+.nac_wright_a > li {
+    margin-top: 10px;
+    width: 300px;
+}
+
+ a{
+    color: black;
+}
+
+a:hover{
+    color: white;
+    background-color: black;
+    width: 400px;
+}
+
+.nac_wishhead{
+    font-weight: 1500;
+}
