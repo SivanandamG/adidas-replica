@@ -12,7 +12,7 @@ function App() {
     <Navbar/>
     <Body/>
     <Footer/>
-    <Signup/>
+    {/* <Signup/> */}
     </div>
   );
 }
