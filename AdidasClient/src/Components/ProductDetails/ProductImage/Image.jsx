@@ -54,7 +54,7 @@ export const Images = () => {
       const [res, setRes] = useState();
       useEffect(async () => {
         let data = await axios.get(
-          "http://localhost:2345/products/621716d177215202e3c4acc6"
+          "https://adidas-server.herokuapp.com/products/621716d177215202e3c4acc6"
         );
         data = data.data;
         setRes(data);

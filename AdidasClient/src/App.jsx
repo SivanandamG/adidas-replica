@@ -1,7 +1,7 @@
 import './App.css'
 import {Routes, Route} from 'react-router-dom'
-import { ProductDetails } from './Components/ProductDetails'
-import { ProductWishlist } from './Components/ProductWishlist'
+import { ProductDetails } from './Components/ProductDetails/ProductDetails'
+import { ProductWishlist } from './Components/ProductWishlist/ProductWishlist'
 
 function App() {
   return (
