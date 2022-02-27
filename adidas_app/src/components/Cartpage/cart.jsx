@@ -3,6 +3,7 @@ import "./cart.css"
 import { Navbar } from "../Navigation/Navbar.jsx";
 import { Footer } from "../Footer/Footer.jsx";
 import { Link } from "react-router-dom";
+import { MdDeleteOutline } from "react-icons/md";
 
 export default function Cart (){
      const [cart,setCart] = useState([]);
@@ -39,7 +40,9 @@ export default function Cart (){
                      }}
                    >
                      <b>
-                       <strong>X</strong>
+                       <strong id="cart_dlt_icon">
+                         <MdDeleteOutline />
+                       </strong>
                      </b>
                    </div>
                    <img src={a.imageUrls[0]} alt="" />
@@ -73,7 +76,9 @@ export default function Cart (){
                );
              })}
              <a href="/Address">
-               <button className="checkout">Checkout →</button>
+               <button className="checkout">
+                 Checkout →
+               </button>
              </a>
            </div>
 
