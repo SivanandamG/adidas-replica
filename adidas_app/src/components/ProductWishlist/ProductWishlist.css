@@ -2,11 +2,12 @@
     float: left;
     width: 70%;
     text-align: left;
+    margin-left: 10px;
 }
 
 .nac_wish_right{
     float: right;
-    width: 30%;
+    width: 25%;
     text-align: left;
 }
 
@@ -24,18 +25,40 @@
     margin-top: 10px;
     width: 300px;
 }
+.nac_black{
+    color: black;
+}
 
-/* 
 a:hover{
     color: white;
     background-color: black;
     width: 400px;
-} */
+}
 
 .nac_wishhead{
     font-weight: 1500;
 }
 
 #pro_container_wrap{
-    /* margin-top: 50px; */
+    margin-top: 50px;
+}
+
+.nac_wishbox{
+    width: 300px;
+    height: 400px;
+    border: solid black 1px;
+}
+
+.nac_wishbox > img{
+    width: 300px;
+    height: 300px;
+}
+
+.nac_wishbox > p{
+    font-weight: bold;
+    text-align: center;
+}
+
+.nac_wisht{
+    color: blue;
 }
