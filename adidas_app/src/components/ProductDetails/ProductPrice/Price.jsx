@@ -63,9 +63,9 @@ export const Price = () => {
               ADD TO BAG <span id="addtobag_icon">>></span>
             </button>
           </a>
-          <button className="nac_fav">
-            <FavoriteBorderIcon />
-          </button>
+          <div className="nac_fav">
+            <FavoriteBorderIcon id="nac_fav_icon"/>
+          </div>
         </div>
         <div className="nac_right_bottom">
           <div className="nac_ship">

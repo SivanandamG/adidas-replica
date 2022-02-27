@@ -61,10 +61,10 @@
   .mainImg {
     transition: all 500ms;
     padding-top: 30px;
-    width: 800px;
+    width:620px;
     height: 550px;
     position: relative;
-    
+    margin-left: 100px;
   }
   
   .actions {
