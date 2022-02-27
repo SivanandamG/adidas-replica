@@ -2,9 +2,9 @@
   height: auto;
 }
 
-.body_video_wrap {
-  width: 600px;
-}
+/* .body_video_wrap {
+  width: 400px;
+} */
 
 .body_video_wrap > video {
   max-width: 1350px;
