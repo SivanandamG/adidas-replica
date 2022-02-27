@@ -59,9 +59,11 @@ export const Signup = () => {
       </div>
       <div id="signup_reg_btn" onClick={()=>{
                  fetch(`https://adidas-server.herokuapp.com/auth/signup/${email}/${password}`).then((res)=>res.json()).then(()=>{setLogin(true)});
-                if(login){
+                if (login) {
                   console.log(login);
-                 window.location="/Login";
+                  window.location = "/Login";
+                } else {
+                  alert("User Already Exists");
                 }
                 }}>
         <div>REGISTER</div>
