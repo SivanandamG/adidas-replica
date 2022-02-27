@@ -62,7 +62,7 @@ export const Signup = () => {
                 if (login) {
                   console.log(login);
                   window.location = "/Login";
-                } else {
+                } else if(!login){
                   alert("User Already Exists");
                 }
                 }}>

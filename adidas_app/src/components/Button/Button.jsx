@@ -11,7 +11,7 @@ export const Btn=({value,email,password})=>{
                    if(login){
                     window.location="/";
                    }
-                   else{
+                   else if(!login){
                        alert("Invalid Credentials")
                    }
                    }}
