@@ -35,8 +35,8 @@ export const ProductWishlist = () => {
     // console.log(ret[0])
 
     return (
-      // <>
-      // <Navbar />
+      <>
+      <Navbar />
       <div id="pro_container_wrap">
         
         <div className="nac_wish_left">
@@ -80,7 +80,7 @@ export const ProductWishlist = () => {
         </div>
         
       </div>
-      // <Footer/>
-      // </>
+      {/* // <Footer/> */}
+      </>
     );
 }
