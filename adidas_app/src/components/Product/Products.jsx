@@ -5,27 +5,41 @@ import { Footer } from "../Footer/Footer.jsx";
 import "./products.css"
 
 export const Products = () => {
-
-
+  
+  
   const [data, setData] = useState([]);
-
-  const sortAsc=()=>(
-    data.map((e)=>{
-      data.sort((a,b)=>(a.price-b.price))
-    })
-  )
-    const sortDec=()=>{
-      
-    }
+  const [sort1,setSort] = useState();
   
   useEffect(() => {
     fetch("https://adidas-server.herokuapp.com/products")
       .then((res) => res.json())
       .then((res) => {
-        console.log(res);
+        // console.log(res);
+        // setSort(res);
         setData(res);
+
+  
       });
-  }, []); 
+  }, []);
+
+  const sort = (e)=>{
+    console.log(data);
+    if(e.target.value == "null"){
+      // const data1 = data.sort((a,b)=>{return b.price-a.price})
+      setData(data);
+    }else
+     if(e.target.value == "LOW TO HIGH"){
+      console.log(e.target.value);
+      const data1 = data.sort((a,b)=>{return a.price-b.price})
+      setData(data1);
+    }else if(e.target.value == "HIGH TO LOW"){
+      const data1 = data.sort((a,b)=>{return b.price-a.price})
+      console.log(data1);
+      setData(data1);
+    }
+  }
+
+  
 
   return (
     <>
@@ -54,12 +68,12 @@ export const Products = () => {
               src="	https://www.adidas.co.in/glass/react/dd402dc/assets/img/icon-test-filters.svg"
             />
           </button> */}
-          <select>
-            <option>Sort by</option>
-            <option value="LOW TO HIGH" onClick={sortAsc()}>
+          <select onChange={(e)=>{sort(e)}}>
+            <option value="null">Sort by</option>
+            <option value="LOW TO HIGH" >
               LOW TO HIGH
             </option>
-            <option value="HIGH TO LOW" onClick={sortDec}>
+            <option value="HIGH TO LOW" >
               HIGH TO LOW
             </option>
           </select>

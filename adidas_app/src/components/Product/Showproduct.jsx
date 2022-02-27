@@ -1,6 +1,8 @@
 import { AiOutlineHeart } from "react-icons/ai";
 export const Showproduct=({id,image,price,name,category,discount})=>{
+
     const discounted=(price*discount).toFixed(2);
+    // console.log(id);
     return (
       <div>
         <a
