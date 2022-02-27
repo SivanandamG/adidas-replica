@@ -28,8 +28,9 @@ export const Products = () => {
   }, []); 
 
   return (
+    <>
+    <Navbar />
     <div className="main_page">
-      <Navbar />
       <h1 className="heading">MEN SNEAKERS</h1>
       <div className="type_options">
         <a href="#">All men's footwear</a>
@@ -201,7 +202,8 @@ export const Products = () => {
           <li id="list">Caps</li>
         </div>
       </div>
-      <Footer />
     </div>
+    <Footer />
+    </>
   );
 };

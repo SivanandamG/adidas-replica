@@ -7,7 +7,7 @@ import { Navbar } from "../Navigation/Navbar.jsx";
 import { Footer } from "../Footer/Footer.jsx";
 
 export const ProductDetails = () => {
-    return (
+ return (
         <>
             <Navbar/>
         <div className="nac__container">

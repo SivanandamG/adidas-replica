@@ -130,7 +130,9 @@ export const Navbar = () => {
                     id="nav_lower_sec_srchinput"
                     placeholder="Search"
                   />
-                  <i>{<GrSearch />}</i>
+                  <a href="/products">
+                    <i>{<GrSearch id="nav_lower_sec_srchinput_searchicon" />}</i>
+                  </a>
                 </div>
                 <div id="nav_lower_sec_icons">
                   <a href="/login">

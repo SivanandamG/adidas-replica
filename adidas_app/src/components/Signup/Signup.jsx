@@ -51,7 +51,7 @@ export const Signup = () => {
       </div>
       <div id="OR_txt">OR</div>
       <div id="signup_fb_btn">
-        <div>FACEBOOK</div>
+        <div id="facebook_signup_txt">FACEBOOK</div>
         <div>
           <i><BsFacebook id="signup_fbicon"/></i>
         </div>

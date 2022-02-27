@@ -10,7 +10,7 @@ import { useParams } from "react-router-dom";
 export const Images = () => {
   var { id } = useParams();
 
-   const [res, setRes] = useState([]);
+   var [res, setRes] = useState([]);
    const [ide, setIde] = useState({ id });
    useEffect(async () => {
      console.log(ide);

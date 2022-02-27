@@ -5,6 +5,8 @@
 .nac__container{
     margin: auto;
     display: flex;
+    margin-top: 30px;
+    margin-bottom: 60px;
 }
 
 .nac_left_container{
