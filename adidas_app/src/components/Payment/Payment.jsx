@@ -22,7 +22,7 @@ export const Payment=()=>{
               <label for="name">Name</label>
               <input id="name" type="text" placeholder="Enter Name" />
               <Link to="/Orderplaced">
-                <button id="submitbtn">SUBMIT</button>
+                <button id="submitbtn">PAY NOW</button>
               </Link>
             </form>
           </div>
