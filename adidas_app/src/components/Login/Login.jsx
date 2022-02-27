@@ -2,12 +2,15 @@ import { Btn } from "../Button/Button";
 import Checkbox from "@mui/material/Checkbox";
 import TextField from "@mui/material/TextField";
 import { BsFacebook } from "react-icons/bs";
-
+import "./login.css"
+import { Navbar } from "../Navigation/Navbar.jsx";
+import { Footer } from "../Footer/Footer.jsx";
 
 
 export const Login = () => {
     const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
-  return (
+  return (<>
+  <Navbar/>
     <div className="nkContainer">
       <div id="nkLeft">
         <div id="heading">LOG IN</div>
@@ -75,5 +78,7 @@ export const Login = () => {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };

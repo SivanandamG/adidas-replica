@@ -39,7 +39,9 @@ export const Navbar = () => {
         </div>
         <div id="nav_lower_wrap">
           <div id="nav_lower_wrap_logo">
-            <img src="/images/adidas-logo.svg" alt="" width="70px" />
+            <Link to="/">
+              <img src="/images/adidas-logo.svg" alt="" width="70px" />
+            </Link>
           </div>
           <div id="nav_lower_wrap_link_contents">
             <div id="nav_lower_wrap_link_contents_primary">
@@ -52,13 +54,13 @@ export const Navbar = () => {
               <Link to="" className="nav_lower_primary_links">
                 order tracker
               </Link>
-              <Link to="" className="nav_lower_primary_links">
+              <Link to="/Signup" className="nav_lower_primary_links">
                 sign up
               </Link>
               <Link to="" className="nav_lower_primary_links">
                 creators club
               </Link>
-              <Link to="" className="nav_lower_primary_links">
+              <Link to="/Login" className="nav_lower_primary_links">
                 log in
               </Link>
             </div>
@@ -131,9 +133,15 @@ export const Navbar = () => {
                   <i>{<GrSearch />}</i>
                 </div>
                 <div id="nav_lower_sec_icons">
-                  <i>{<FiUser />}</i>
-                  <i>{<CgHeart />}</i>
-                  <i>{<BsHandbag />}</i>
+                  <a href="/login">
+                    <i>{<FiUser />}</i>
+                  </a>
+                  <a href="/Wishlist">
+                    <i>{<CgHeart />}</i>
+                  </a>
+                  <a href="/Cart">
+                    <i>{<BsHandbag />}</i>
+                  </a>
                 </div>
               </div>
             </div>

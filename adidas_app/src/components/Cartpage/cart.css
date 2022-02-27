@@ -1,5 +1,8 @@
 #cart{
-font-size: 16px;}
+font-size: 16px;
+margin-bottom: 50px;
+}
+
 #cart>div:nth-child(1){
     width: 50%;
     margin-left: 17%;

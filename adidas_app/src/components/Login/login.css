@@ -2,11 +2,12 @@
     text-align: left;
 }
 .nkContainer{
-    border: 1px solid red;
     display: grid;
     grid-template-columns: 500px 500px;
     /* width: 60%; */
     justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 #heading{
     font-size: 40px;

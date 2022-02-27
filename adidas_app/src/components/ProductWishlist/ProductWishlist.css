@@ -25,16 +25,17 @@
     width: 300px;
 }
 
- a{
-    color: black;
-}
-
+/* 
 a:hover{
     color: white;
     background-color: black;
     width: 400px;
-}
+} */
 
 .nac_wishhead{
     font-weight: 1500;
+}
+
+#pro_container_wrap{
+    /* margin-top: 50px; */
 }

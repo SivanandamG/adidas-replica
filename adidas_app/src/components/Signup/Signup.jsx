@@ -1,9 +1,13 @@
 import "./Signup.css";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { BsFacebook } from "react-icons/bs";
+import { Navbar } from "../Navigation/Navbar.jsx";
+import { Footer } from "../Footer/Footer.jsx";
 
 export const Signup = () => {
   return (
+    <>
+    <Navbar/>
     <div id="signup_wrap">
       <div id="signup_header">CREATE YOUR ACCOUNT</div>
       <div id="signup_subheader">
@@ -53,5 +57,7 @@ export const Signup = () => {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
