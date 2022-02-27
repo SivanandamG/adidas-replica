@@ -8,14 +8,19 @@ export const Showproduct=({id,image,price,name,category,discount})=>{
           id="design"
         >
           <img id="display_img" src={image[0]} />
+          <a href={`wishlist/${id}`}>
           <div id="fav">
             <AiOutlineHeart
               id="heart"
               onClick={() => {
                 console.log("hereee");
+                console.log(id)
+                
               }}
             />
           </div>
+          </a>
+          
           <div id="prod_name">{name}</div>
           {/* <div id="prod_all_img">{image.map((e)=>(<img src={e}/>))}</div> */}
           <div id="prod_price">
