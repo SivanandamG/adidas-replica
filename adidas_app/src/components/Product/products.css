@@ -57,7 +57,7 @@
 }
 
 #prod_show{
-    height: 450px;
+    height: 500px;
     width: 300px;
     border: 1px solid lightgray;
     margin-left: 50px;
@@ -106,6 +106,7 @@
 }
 #prod_price>span:first-child{
     text-decoration: line-through;
+    margin-left: 5px;
 }
 #finalprice{
     color: red;
@@ -114,16 +115,20 @@
     height: 35px;
     /* border: 1px solid red; */
     margin-bottom: 0px;
+    line-height: 20px;
 }
 
 #prod_cat{
     position: relative;
-    top: -25px;
+    top:7px;
+    margin-left: 10px;
     /* border: 1px solid blue; */
 }
 #prod_color{
     position: relative;
-    top: -25px;
+    top: 6px;
+    font-size: 15px;
+    margin-left: 10px;
     /* border: 1px solid blue; */
 }
  #prod_all_img{

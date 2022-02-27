@@ -22,7 +22,7 @@ export const Showproduct=({id,image,price,name,category,discount})=>{
           </a>
           
           <div id="prod_name">{name}</div>
-          {/* <div id="prod_all_img">{image.map((e)=>(<img src={e}/>))}</div> */}
+          
           <div id="prod_price">
             <span>₹{price}</span> <span id="finalprice">₹{discounted}</span>
           </div>
