@@ -6,8 +6,11 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import WarningAmberIcon from '@mui/icons-material/WarningAmber';
 import MoneyIcon from '@mui/icons-material/Money';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import { useParams } from "react-router-dom";
+
 
 export const Price = () => {
+  const { id } = useParams();
     return (
       <div className="nac_prbox">
         <div className="nac_right_top">
@@ -46,7 +49,7 @@ export const Price = () => {
         <div className="nac_right_btn">
           <a href="/Cart">
             <button className="nac_addbag" onClick={()=>{
-                fetch("https://adidas-server.herokuapp.com/cart/additem/:id/:product")
+                fetch(`https://adidas-server.herokuapp.com/cart/additem/62173d4ee7006e0f0f397d33/${id}`)
                   .then((res) => res.json())
                   .then((res) => {
                     console.log(res);
