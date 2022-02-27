@@ -108,6 +108,7 @@
 }
 .nac_ship > a{
     color: black;
+    margin-left: 7px;
 }
 .nac_money{
     text-align: left;
@@ -116,7 +117,9 @@
 }
 .nac_money > a{
     color: black;
+    margin-left: 7px;
 }
 .nac__s{
     color: black;
+    margin-left: 7px;
 }
