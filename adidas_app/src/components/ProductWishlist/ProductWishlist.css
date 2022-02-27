@@ -1,12 +1,10 @@
 .nac_wish_left{
-    float: left;
     width: 70%;
     text-align: left;
     margin-left: 10px;
 }
 
 .nac_wish_right{
-    float: right;
     width: 25%;
     text-align: left;
 }
@@ -29,7 +27,7 @@
     color: black;
 }
 
-a:hover{
+.nac_black:hover{
     color: white;
     background-color: black;
     width: 400px;
@@ -40,7 +38,9 @@ a:hover{
 }
 
 #pro_container_wrap{
-    margin-top: 50px;
+    display: flex;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .nac_wishbox{
@@ -61,4 +61,8 @@ a:hover{
 
 .nac_wisht{
     color: blue;
+}
+
+#wishlist_price{
+    margin-top: 20px;
 }
