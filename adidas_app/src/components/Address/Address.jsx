@@ -1,7 +1,11 @@
 import "./address.css"
+import { Navbar } from "../Navigation/Navbar.jsx";
+import { Footer } from "../Footer/Footer.jsx";
+
 export const Address=()=>{
     return(
-        
+        <>
+        <Navbar/>
         <div class="nkcontainer">
         <h2 id="nkhead">Add Address</h2>
         
@@ -24,6 +28,7 @@ export const Address=()=>{
         <button class="btncancel">Cancel</button>
         <button class="btnaddress">Continue</button>
     </div>
-    
+    <Footer/>
+    </>
     )
 }

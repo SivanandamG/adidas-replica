@@ -7,6 +7,7 @@ import { Products } from "./components/Product/Products.jsx";
 import { ProductDetails } from "./components/ProductDetails/ProductDetails.jsx";
 import Cart from "./components/Cartpage/cart.jsx";
 import { ProductWishlist } from "./components/ProductWishlist/ProductWishlist.jsx";
+import {Address} from "./components/Address/Address.jsx";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/Signup" element={<Signup />}></Route>
         <Route path="/Login" element={<Login />}></Route>
         <Route path="/Wishlist" element={<ProductWishlist />}></Route>
+        <Route path="/Address" element={<Address />}></Route>
       </Routes>
     </div>
   );
