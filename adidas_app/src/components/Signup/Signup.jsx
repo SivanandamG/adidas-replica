@@ -3,8 +3,22 @@ import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { BsFacebook } from "react-icons/bs";
 import { Navbar } from "../Navigation/Navbar.jsx";
 import { Footer } from "../Footer/Footer.jsx";
+import { useState } from "react";
+import { Navigate } from "react-router-dom";
 
 export const Signup = () => {
+  const [email,setEmail] = useState("");
+  const [password,setPassword] = useState("");
+  const [login,setLogin] = useState(false);
+  
+  const handleemail = (e)=>{
+    setEmail(e.target.value);
+    console.log(email);
+  }
+  const handlepassword = (e)=>{
+    setPassword(e.target.value);
+    console.log(password);
+  }
   return (
     <>
     <Navbar/>
@@ -14,10 +28,10 @@ export const Signup = () => {
         Sign up now and get 15% off your first order
       </div>
       <div id="signup_email_input">
-        <input type="text" placeholder="Email *" />
+        <input type="text" onChange={handleemail} placeholder="Email *" />
       </div>
       <div id="signup_pass_input">
-        <input type="text" placeholder="Password *" />
+        <input type="text" onChange={handlepassword} placeholder="Password *" />
       </div>
       <div id="signup_input_disclaim">
         Please use 8+ characters, with at least 1 number and a mixture of big
@@ -43,7 +57,13 @@ export const Signup = () => {
           <br /> <span> Conditions and the adidas Privacy Policy. *</span>
         </label>
       </div>
-      <div id="signup_reg_btn">
+      <div id="signup_reg_btn" onClick={()=>{
+                 fetch(`https://adidas-server.herokuapp.com/auth/signup/${email}/${password}`).then((res)=>res.json()).then(()=>{setLogin(true)});
+                if(login){
+                  console.log(login);
+                 window.location="/Login";
+                }
+                }}>
         <div>REGISTER</div>
         <div>
           <i>{<HiOutlineArrowNarrowRight id="signup_regicon" />}</i>
