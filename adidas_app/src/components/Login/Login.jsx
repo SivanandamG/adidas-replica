@@ -5,9 +5,20 @@ import { BsFacebook } from "react-icons/bs";
 import "./login.css"
 import { Navbar } from "../Navigation/Navbar.jsx";
 import { Footer } from "../Footer/Footer.jsx";
+import { useState } from "react";
 
 
 export const Login = () => {
+  const [email,setEmail] = useState("");
+  const [password,setPassword] = useState("");
+  const handleemail = (e)=>{
+    setEmail(e.target.value);
+    console.log(email);
+  }
+  const handlepassword = (e)=>{
+    setPassword(e.target.value);
+    console.log(password);
+  }
     const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
   return (<>
   <Navbar/>
@@ -24,8 +35,9 @@ export const Login = () => {
             required
             id="outlined-required"
             label="Email"
+            onChange={handleemail}
             // defaultValue="Password *"
-          />
+          /> 
             <br/>
             <br/>
             <br/>
@@ -34,6 +46,7 @@ export const Login = () => {
             required
             id="outlined-required"
             label="Password"
+            onChange={handlepassword}
             // defaultValue="Password *"
           />
           <br/>
@@ -44,7 +57,7 @@ export const Login = () => {
           </div>
           <br/>
 
-          <Btn value="LOG IN" />
+          <Btn  value="LOG IN" email={email} password={password} />
           <br/>
           <div id="tc">
             By clicking "LOG IN", I agree to the <span>Terms & Conditions</span>, the
