@@ -51,14 +51,13 @@ form>a{
 }
 #fb{
     border: 1px solid black;
-    padding: 15px;
+    padding: 13px;
     font-weight: bold;
-    width: 35%;
-   
+    width: 50%;
     cursor: pointer;
 }
 
 #logo{
     color: blue;
-    margin-left: 60px;
+    margin-left: 130px;
 }
