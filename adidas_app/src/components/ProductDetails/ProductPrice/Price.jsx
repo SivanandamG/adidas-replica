@@ -48,15 +48,19 @@ export const Price = () => {
         </div>
         <div className="nac_right_btn">
           <a href="/Cart">
-            <button className="nac_addbag" onClick={()=>{
-                fetch(`https://adidas-server.herokuapp.com/cart/additem/62173d4ee7006e0f0f397d33/${id}`)
+            <button
+              className="nac_addbag"
+              onClick={() => {
+                fetch(
+                  `https://adidas-server.herokuapp.com/cart/additem/62173d4ee7006e0f0f397d33/${id}`
+                )
                   .then((res) => res.json())
                   .then((res) => {
                     console.log(res);
                   });
-            }}>
-              ADD TO BAG
-              <ArrowRightAltIcon />
+              }}
+            >
+              ADD TO BAG <span id="addtobag_icon">>></span>
             </button>
           </a>
           <button className="nac_fav">
